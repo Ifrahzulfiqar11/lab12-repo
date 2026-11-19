@@ -9,7 +9,7 @@ function check(e){
   const v = document.getElementById("mark").value.trim();
   const n = Number(v);
   const r = document.getElementById("result");
-  if (v !== "" && Number.isInteger(n) && n >= 0 && n < 10)
+  if (v !== "" && Number.isInteger(n) && n >= 0 && n <= 10)
     r.textContent = "Accepted";
   else r.textContent = "Rejected";
 }
